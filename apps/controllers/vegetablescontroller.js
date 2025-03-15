@@ -1,9 +1,8 @@
 var express = require("express");
 var router = express.Router();
 
-router.get("/", function(req,res){
-    res.json({"message": "this is blog vegetables page"});
-    // res.render("index.ejs");
+router.use("/", function (req, res) {
+    res.render("vegetables.ejs");
 });
 
 module.exports = router;

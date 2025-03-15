@@ -11,7 +11,6 @@ router.use("/vegetables", require(__dirname + "/vegetablescontroller"));
 router.use("/admin", require(__dirname + "/admin/admincontroller"));
 
 router.get("/", function(req,res){
-    res.json({"message": "this is index page"});
-    // res.render("home.ejs");
+    res.render("index.ejs");
 });
 module.exports = router;
