@@ -25,10 +25,7 @@ router.get("/product-list", async function(req,res){
 });
 
 router.get("/", async function(req, res) {
-    var productService = new ProductService();
-    var productList = await productService.getProductList(1, 10); // Lấy 10 sản phẩm
-
-    res.render("shop.ejs", { products: productList });
+    res.render("shop.ejs");
 });
 
 module.exports = router;
